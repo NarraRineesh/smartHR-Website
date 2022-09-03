@@ -12,24 +12,24 @@ import { ProjectsTwoComponent } from './components/pages/projects-two/projects-t
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { ServicesOneComponent } from './components/pages/services-one/services-one.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { careerComponent } from './components/pages/career/career.component';
+import { CareerDetailsComponent } from './components/pages/career-details/career-details.component';
 
 const routes: Routes = [
     {path: '', component: HomeThreeComponent},
-    
     {path: 'home', component: HomeThreeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'services', component: ServicesOneComponent},
     {path: 'services-details', component: ServicesDetailsComponent},
-    {path: 'projects', component: ProjectsTwoComponent},
-    {path: 'projects-details', component: ProjectsDetailsComponent},
     {path: 'pricing', component: PricingComponent},
     {path: 'faq', component: FaqComponent},
     {path: 'terms-conditions', component: TermsConditionsComponent},
     {path: 'privacy-policy', component: PrivacyPolicyComponent},
     {path: 'error', component: ErrorComponent},
+    {path: 'career', component: careerComponent},
+    {path: 'career-details/:id', component: CareerDetailsComponent},
     {path: 'contact', component: ContactComponent},
-    // Here add new pages component
-    {path: '**', component: ErrorComponent} // This line will remain down from the whole pages component list
+    {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({

@@ -18,17 +18,16 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { ErrorComponent } from './components/pages/error/error.component';
+import { careerComponent } from './components/pages/career/career.component';
+import { CareerDetailsComponent } from './components/pages/career-details/career-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PreloaderComponent,
     FooterComponent,
-    
     HomeThreeComponent,
-    
     NavbarTwoComponent,
-    
     AboutComponent,
     ServicesOneComponent,
     ServicesDetailsComponent,
@@ -39,7 +38,9 @@ import { ErrorComponent } from './components/pages/error/error.component';
     FaqComponent,
     TermsConditionsComponent,
     PrivacyPolicyComponent,
+    careerComponent,
     ErrorComponent,
+    CareerDetailsComponent
   ],
   imports: [
     BrowserModule,
