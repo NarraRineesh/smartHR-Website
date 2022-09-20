@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "website-name-ng": {
+    "mvpinfotech-ng": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/website-name-ng",
+            "outputPath": "dist/mvpinfotech-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -92,18 +92,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "website-name-ng:build"
+            "browserTarget": "mvpinfotech-ng:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "website-name-ng:build:production"
+              "browserTarget": "mvpinfotech-ng:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "website-name-ng:build"
+            "browserTarget": "mvpinfotech-ng:build"
           }
         },
         "test": {
@@ -127,15 +127,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "website-name-ng:serve"
+            "devServerTarget": "mvpinfotech-ng:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "website-name-ng:serve:production"
+              "devServerTarget": "mvpinfotech-ng:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "website-name-ng"
+  "defaultProject": "mvpinfotech-ng"
 }
